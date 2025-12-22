@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #541388;
+    text-align: center;
+    background-image: url("https://static.vecteezy.com/system/resources/previews/004/532/221/original/tic-tac-toe-seamless-background-on-dark-blue-illustration-vector.jpg");
+    background-size: contain;
+    background-blend-mode: overlay;
+}
+.container{
+    height: 70vh;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+   
+}
+#game{
+    margin-top: 10px;
+    height: 60vmin;
+    width: 60vmin;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    flex-wrap: wrap;
+    gap: 1.5vmin;
+}
+.box{
+    height: 18vmin;
+    width: 18vmin;
+    border-radius: 1rem;
+    border: none;
+    box-shadow:20px 20px 20px black;
+    background-color: #F1E9DA;
+    font-size: 7vw;
+    font-weight: 600;
+    font-family: sans-serif;
+    color: black;
+}
+
+.box.o{
+    color: #d90311;  
+      text-shadow: 0 0 15px rgba(255, 0, 13, 0.8);
+}
+
+.box.x{
+    color: #0f9618;  
+       text-shadow: 0 0 15px rgba(10, 167, 65, 0.8);
+}
+h1{
+    font-size: 4.5rem;
+    color: #F1E9DA;
+    margin-top: 50px;
+    text-shadow: 20px 20px 20px black;
+}
+.reset-btn{
+    padding: 12px 28px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: white;
+    background: linear-gradient(135deg, #FFD400, #D90368);
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    letter-spacing: 1px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.35);
+    transition: all 0.3s ease;
+    margin-bottom: 10px;
+}
+.reset-btn:hover{
+    transform: translateY(-4px) scale(1.03);
+    box-shadow: 0 18px 35px rgba(0, 0, 0, 0.5);
+    background: linear-gradient(135deg, #D90368, #FFD400);
+}
+.new-btn{
+    padding: 12px 28px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: white;
+    background: linear-gradient(135deg, #FFD400, #D90368);
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    letter-spacing: 1px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.35);
+    transition: all 0.3s ease;
+    margin-bottom: 10px;
+    margin-left: 2vw;
+}
+.new-btn:hover{
+      transform: translateY(-4px) scale(1.03);
+    box-shadow: 0 18px 35px rgba(0, 0, 0, 0.5);
+    background: linear-gradient(135deg, #D90368, #FFD400);
+}
+#msg{
+    margin-top: 10px;
+    font-size: 3rem;
+    color: #e0a840;
+}
+.hide{
+    display: none;
+}
+#confetti{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none;
+  z-index: 9999;
+}
+
+
